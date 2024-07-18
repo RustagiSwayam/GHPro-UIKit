@@ -81,7 +81,7 @@ class SearchViewController: UIViewController {
     //using @objc conforms it to be used into #selector
     @objc func pushFollowerListViewController(){
         guard isUsernameEntered else { 
-            print("No username was entered")
+            presentAlertOnMainThread(title: "Empty Username", message: "No username was entered by you, we need a username to process it.", buttonTitle: "OK")
             return } //doesnt execute the function, if isUsernameEntered is false
         let followerListViewController = FollowerListViewController()
         followerListViewController.username = usernameTextField.text
