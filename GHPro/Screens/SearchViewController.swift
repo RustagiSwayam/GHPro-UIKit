@@ -31,7 +31,7 @@ class SearchViewController: UIViewController {
     //the reason of hiding the navigation bar in viewWillAppear is, when we return from the second screen,
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(false, animated:true)
     }
     
     func configureLogoImageView(){
