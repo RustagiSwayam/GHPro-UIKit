@@ -5,29 +5,22 @@ class FollowerListViewController: UIViewController {
     var username: String!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemBackground
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
-        // Fetch followers
-        NetworkManager.shared.getFollowers(for: username, page: 1) { [weak self] (followers, errorMessage) in
-            guard let self = self else { return }
+            super.viewDidLoad()
+            view.backgroundColor = .systemBackground
+            navigationController?.navigationBar.prefersLargeTitles = true
             
-            if let errorMessage = errorMessage {
-                self.presentAlertOnMainThread(title: "Something's wrong", message: errorMessage.rawValue, buttonTitle: "OK")
-                return
+            // Fetch followers
+            NetworkManager.shared.getFollowers(for: username, page: 1) { result in
+                switch result {
+                case .success(let followers):
+                    print(followers?.count)
+                    // Process followers (e.g., update UI)
+                case .failure(let error):
+                    self.presentAlertOnMainThread(title: "Bad stuff happened", message: error.rawValue, buttonTitle: "OK")
+                }
             }
-            
-            guard let followers = followers, !followers.isEmpty else {
-                self.presentAlertOnMainThread(title: "None Found", message: "No followers were found for \(username ?? "")", buttonTitle: "OK")
-                return
-            }
-            
-            // Process followers (e.g., update UI)
-            print("This user has \(followers.count) follower\(followers.count > 1 ? "s" : "")")
-            print(followers)
         }
-    }
+        
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
