@@ -13,7 +13,7 @@
 		D300CA902C462DED00A684EA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D300CA8F2C462DED00A684EA /* Base */; };
 		D3040C532C47EB8E009DF7C3 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3040C522C47EB8E009DF7C3 /* UIViewController+Ext.swift */; };
 		D316495B2C47D77B0082B573 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D316495A2C47D77B0082B573 /* AlertViewController.swift */; };
-		D346CE9D2C624280008D08C5 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346CE9C2C624280008D08C5 /* Errors.swift */; };
+		D346CE9D2C624280008D08C5 /* GFErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346CE9C2C624280008D08C5 /* GFErrors.swift */; };
 		D3B68FFA2C468CAE0071197A /* avatar-placeholder-dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B68FED2C468CAE0071197A /* avatar-placeholder-dark@2x.png */; };
 		D3B68FFB2C468CAE0071197A /* avatar-placeholder-dark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B68FEE2C468CAE0071197A /* avatar-placeholder-dark@3x.png */; };
 		D3B68FFC2C468CAE0071197A /* avatar-placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B68FEF2C468CAE0071197A /* avatar-placeholder@2x.png */; };
@@ -47,7 +47,7 @@
 		D300CA912C462DED00A684EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3040C522C47EB8E009DF7C3 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+Ext.swift"; path = "../UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		D316495A2C47D77B0082B573 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = ../Screens/AlertViewController.swift; sourceTree = "<group>"; };
-		D346CE9C2C624280008D08C5 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		D346CE9C2C624280008D08C5 /* GFErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFErrors.swift; sourceTree = "<group>"; };
 		D3B68FED2C468CAE0071197A /* avatar-placeholder-dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-placeholder-dark@2x.png"; sourceTree = "<group>"; };
 		D3B68FEE2C468CAE0071197A /* avatar-placeholder-dark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-placeholder-dark@3x.png"; sourceTree = "<group>"; };
 		D3B68FEF2C468CAE0071197A /* avatar-placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-placeholder@2x.png"; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		D346CE9B2C624268008D08C5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				D346CE9C2C624280008D08C5 /* Errors.swift */,
+				D346CE9C2C624280008D08C5 /* GFErrors.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3E83BD02C48E6CE00410C38 /* User.swift in Sources */,
-				D346CE9D2C624280008D08C5 /* Errors.swift in Sources */,
+				D346CE9D2C624280008D08C5 /* GFErrors.swift in Sources */,
 				D3B6900D2C4799170071197A /* GFTextField.swift in Sources */,
 				D3B690092C4691F70071197A /* FavouritesListViewController.swift in Sources */,
 				D3B6900B2C4782240071197A /* GFButton.swift in Sources */,

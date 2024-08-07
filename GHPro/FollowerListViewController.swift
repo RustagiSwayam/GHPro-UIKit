@@ -14,7 +14,7 @@ class FollowerListViewController: UIViewController {
             guard let self = self else { return }
             
             if let errorMessage = errorMessage {
-                self.presentAlertOnMainThread(title: "Something's wrong", message: errorMessage, buttonTitle: "OK")
+                self.presentAlertOnMainThread(title: "Something's wrong", message: errorMessage.rawValue, buttonTitle: "OK")
                 return
             }
             
